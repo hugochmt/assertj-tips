@@ -13,11 +13,11 @@ public class BookService {
     this.bookRepository = bookRepository;
   }
 
-  public void notFailingMethod() {
+  public void failingMethod() {
+    throw new RuntimeException("Oh la boulette !");
   }
 
-  public void failingMethod() {
-    throw new RuntimeException();
+  public void notFailingMethod() {
   }
 
   public void addBook(Book book) {

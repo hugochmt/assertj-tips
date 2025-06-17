@@ -5,6 +5,8 @@ public class Entity {
   private String label;
 
   public Entity(int id, String label) {
+    this.id = id;
+    this.label = label;
   }
 
   public int getId() {
